@@ -1,0 +1,244 @@
+﻿:root {
+  --bg: #111827;
+  --bg-soft: #1f2937;
+  --ink: #e5e7eb;
+  --muted: #a1a1aa;
+  --text: #111827;
+  --panel: #ffffff;
+  --panel-soft: #f7f7f7;
+  --brand: #e11d48;
+  --brand-alt: #a78bfa;
+  --line: #d1d5db;
+  --shadow: rgba(0, 0, 0, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #111827 0%, #24243e 60%, #2b1e40 100%);
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+nav {
+  background: #0b1020;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.92rem;
+}
+
+nav a:hover {
+  color: var(--brand-alt);
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.hero {
+  padding: 56px 34px;
+  border-radius: 24px;
+  background: radial-gradient(circle at 20% 15%, rgba(255,255,255,0.12), transparent 12%), linear-gradient(120deg, #ff264b 0%, #981564 62%, #432083 100%);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.28), 0 24px 80px var(--shadow);
+  border: 1px solid rgba(255,255,255,0.24);
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.75rem);
+  line-height: 0.98;
+  margin-bottom: 18px;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.hero p {
+  max-width: 740px;
+  font-size: 1.08rem;
+  margin-bottom: 28px;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.hero .cta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 900;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: #fff;
+  color: var(--text);
+}
+
+.btn-secondary {
+  border-color: rgba(255,255,255,0.78);
+  color: var(--ink);
+  background: transparent;
+}
+
+section {
+  margin-top: 32px;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(180deg, #171d25, #202738);
+  color: var(--ink);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12), 0 12px 40px var(--shadow);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.card h2 {
+  font-size: 1.16rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card p {
+  color: #d1d5db;
+}
+
+.card .home-callout {
+  margin-top: 14px;
+  color: #f9a8d4;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.event-list {
+  display: grid;
+  gap: 12px;
+}
+
+.event {
+  border-left: 4px solid var(--brand);
+  background: rgba(255,255,255,0.06);
+  padding: 14px 16px;
+  border-radius: 8px;
+}
+
+.event strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stack-list {
+  list-style: none;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.stack-list li {
+  color: #d1d5db;
+  padding: 8px 0;
+  border-top: 1px solid #475569;
+}
+
+.stack-list li:first-child {
+  border-top: none;
+}
+
+.vote-section {
+  margin-top: 28px;
+}
+
+.vote-panel {
+  background: var(--panel);
+  color: var(--text);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 12px 40px var(--shadow);
+}
+
+.vote-panel h2 {
+  margin-bottom: 8px;
+}
+
+.vote-panel .intro {
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+.vote-panel fieldset {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.vote-panel legend {
+  font-weight: 900;
+  padding: 0 8px;
+}
+
+.choice-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  color: var(--text);
+}
+
+.choice-row input[type="radio"],
+.choice-row input[type="checkbox"] {
+  accent-color: var(--brand);
+}
+
+.vote-button {
+  border: none;
+  cursor: pointer;
+}
+
+.wide-card {
+  width: 100%;
+}
+
+.checklist {
+  margin-top: 12px;
+}
+
+footer {
+  padding: 28px 24px 54px;
+  color: var(--muted);
+  text-align: center;
+}

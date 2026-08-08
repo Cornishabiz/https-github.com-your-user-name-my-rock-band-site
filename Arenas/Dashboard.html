@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arenas</title>
+  <link rel="stylesheet" href="../Global Style Code/style.css">
+</head>
+<body>
+  <nav>
+    <a href="../Homepage Code/index.html">Home</a>
+    <a href="../Music/index.html">Music</a>
+    <a href="../Tour/index.html">Tour</a>
+    <a href="../Cause/index.html">Cause</a>
+    <a href="../Arenas/Dashboard.html">Arenas</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Arenas</h1>
+      <p>Fan signal, venue operations, and release flow from the flyABBI command center.</p>
+    </section>
+
+    <section>
+      <div class="panel-grid">
+        <article class="card">
+          <h2>Fan Pulse</h2>
+          <p>Audience signals and online activity statuses are live across the network.</p>
+          <ul class="stack-list">
+            <li>Signal strength: Strong</li>
+            <li>Engagement: Rising</li>
+            <li>Release flow: Green</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Live Setup</h2>
+          <p>Tour operations and technical floor briefings are locked for next activation.</p>
+          <ul class="stack-list">
+            <li>Stage crew: Confirmed</li>
+            <li>Sound check: Set</li>
+            <li>Venue support: Ready</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Release Room</h2>
+          <p>Track delivery and timing for launch day.</p>
+          <ul class="stack-list">
+            <li>Launch deck: Online</li>
+            <li>Drop schedule: On track</li>
+            <li>Media desk: Waiting</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="vote-section">
+      <div class="vote-panel">
+        <h2>Team Voting</h2>
+        <p class="intro">Choose the next fan signal and venue activation.</p>
+
+        <form class="vote-form">
+          <fieldset>
+            <legend>Vote for the next FlyABBI venue story</legend>
+
+            <label class="choice-row" for="vote-signal">
+              <input type="radio" id="vote-signal" name="arenaVote" value="Signal Room">
+              <span>Signal Room — local demo night</span>
+            </label>
+
+            <label class="choice-row" for="vote-cause">
+              <input type="radio" id="vote-cause" name="arenaVote" value="Cause Floor">
+              <span>Cause Floor — community support night</span>
+            </label>
+
+            <label class="choice-row" for="vote-live">
+              <input type="radio" id="vote-live" name="arenaVote" value="Live Room">
+              <span>Live Room — city launch block party</span>
+            </label>
+          </fieldset>
+
+          <button class="btn btn-primary vote-button" type="button">Submit vote</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>flyABBI<br>Copyright 2026</p>
+  </footer>
+</body>
+</html>
+
