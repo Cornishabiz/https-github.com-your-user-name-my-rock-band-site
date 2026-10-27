@@ -324,3 +324,30 @@ footer {
     gap: 1.25rem;
   }
 }
+css
+/* 📱 1. Smartphone Media Query Breakpoint */
+@media screen and (max-width: 480px) {
+  .panel-grid, .photo-showcase {
+    display: flex;
+    flex-direction: column; /* Stacks track cards vertically on small phones */
+    gap: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem; /* Shrinks huge headers so they don't clip off mobile viewports */
+  }
+}
+
+/* 📑 2. Tablet Media Query Breakpoint */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stacks main picture underneath title text */
+    text-align: center;
+  }
+}
+
+/* 💻 3. Laptop Media Query Breakpoint */
+@media screen and (max-width: 1024px) {
+  .panel-grid {
+    gap: 1rem; /* Tightens gaps so column boxes don't get squished horizontally */
+  }
+}
