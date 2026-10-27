@@ -315,3 +315,12 @@ footer {
   color: var(--muted);
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .panel-grid {
+    grid-template-columns: 1fr 1fr; /* Drops from 3 columns down to 2 columns */
+    gap: 1.25rem;
+  }
+  .photo-showcase {
+    gap: 1.25rem;
+  }
+}
